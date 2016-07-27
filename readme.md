@@ -33,6 +33,12 @@ Returns value of paramter in hash. If `param` is `undefined` then all values are
 
         var fooValue = hash.get('foo');         // fooValue == "bar"
         var allValues = hash.get();             // allValues == { foo: "bar", car: "dar", sar: "par"}
+        
+* **hash.set(param)**  
+Replace hash with parameters
+
+        hash.set({ foo: "bar" });               // http://url.com#foo=bar
+        hash.set({ car: "dar", sar: "par" });   // http://url.com#car=dar&sar=par
 
 * **hash.remove(param)**  
 Removes the value with name `param`.
