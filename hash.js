@@ -31,6 +31,9 @@ var hash = (function() {
                 return params;
             }
         },
+        set: function(params) {
+            toHash(params);
+        },
         add: function(newParams) {
             var params = fromHash();
             for (var p in newParams) {
